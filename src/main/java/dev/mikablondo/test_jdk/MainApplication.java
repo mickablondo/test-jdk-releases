@@ -1,4 +1,4 @@
-package dev.mikablondo.test_j21;
+package dev.mikablondo.test_jdk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import java.util.SequencedCollection;
 import java.util.concurrent.Executors;
 
 @SpringBootApplication
-public class TestJ21Application {
+public class MainApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestJ21Application.class, args);
+		SpringApplication.run(MainApplication.class, args);
 
 		testSequencedCollection();
 		testPatternMatching();

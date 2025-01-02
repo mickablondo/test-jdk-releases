@@ -1,4 +1,4 @@
-package dev.mikablondo.test_j21;
+package dev.mikablondo.test_jdk;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dev.mikablondo</groupId>
-	<artifactId>test-j21</artifactId>
+	<artifactId>test-releases-jdk</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>test-j21</name>
-	<description>Demo project for Java 21 news</description>
+	<name>test-releases-jdk</name>
+	<description>Demo project for Java releases</description>
 	<url/>
 	<licenses>
 		<license/>
