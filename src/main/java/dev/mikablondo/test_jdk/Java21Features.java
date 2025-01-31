@@ -26,7 +26,7 @@ public class Java21Features {
  public static void testPatternMatching() {
   Object obj = Math.random() > 0.5 ? "Hello, Java 21!" : 42;
   if (obj instanceof String s) {
-   System.out.println("Pattern Matching pour instanceof : " + s.toUpperCase());
+   System.out.println(STR."Pattern Matching pour instanceof : \{s.toUpperCase()}");
   } else {
    System.out.println("L'objet n'est pas une chaîne de caractères");
   }
@@ -36,7 +36,7 @@ public class Java21Features {
   record Point(int x, int y) {}
   Object obj = Math.random() > 0.5 ? new Point(3, 4) : "Not a Point";
   if (obj instanceof Point(int x, int y)) {
-   System.out.println("Record Patterns : x = " + x + ", y = " + y);
+   System.out.println(STR."Record Patterns : x = \{x}, y = \{y}");
   } else {
    System.out.println("L'objet n'est pas un Point");
   }
