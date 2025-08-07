@@ -1,12 +1,28 @@
 package dev.mikablondo.test_jdk;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.SequencedCollection;
 import java.util.concurrent.Executors;
 
-public class Java21Features {
+@Component
+@ConditionalOnProperty("#{T(java.lang.Runtime).version().feature() >= 21}")
+public class Java21Features implements JavaFeature {
+
+ @Override
+ public void run() {
+  System.out.println("Test JDK 21 features");
+  testSequencedCollection();
+  testPatternMatching();
+  testRecordPatterns();
+  testStringTemplates();
+  testScopedValues();
+  testVirtualThreads();
+ }
 
  public static void testSequencedCollection() {
   SequencedCollection<String> sc = new ArrayList<>();
