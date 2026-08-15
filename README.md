@@ -6,6 +6,9 @@ La branche master contient les tests de la derniere jdk dont les tests sont term
 
 🚧 <b>Work in Progress sur la branche jdk25 !</b>
 
+- 25 sur la branche jdk25 : https://www.oracle.com/java/technologies/javase/25-relnote-issues.html
+  
+
 🚧 <b>Work in Progress sur la branche multi-jdk :</b>
 
 Ce projet explore la possibilité de basculer dynamiquement entre différentes versions du JDK en utilisant une structure multi-modules Maven.
